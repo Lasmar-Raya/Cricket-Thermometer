@@ -35,15 +35,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(etChirps.getText().toString().isEmpty())
                 {
-                    Toast.makeText( getApplicationContext(), "Please enter a number" ,Toast.LENGTH_SHORT).show();
+                    Toast.makeText( getApplicationContext(), R.string.text0 ,Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
                     int chirps=Integer.parseInt(etChirps.toString().trim()); // i read the input as a string , i convert it to integer
                     double temp= (chirps/3.0)+4;
-                    String results="The approximate temperature outside is "+formatter.format(temp)+" degrees Celsius ." ;
+                    String results=getString(R.string.text1)+formatter.format(temp) +getString(R.string.text2) ;
                     tvResults.setText(results);
+                    tvResults.setVisibility(View.VISIBLE);
                 }
+
 
             }
         });

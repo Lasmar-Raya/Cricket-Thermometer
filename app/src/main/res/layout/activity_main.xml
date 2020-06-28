@@ -8,19 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/images" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="match_parent"
-        android:layout_height="218dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/thermometer" />
 
     <TextView
         android:id="@+id/textView2"
